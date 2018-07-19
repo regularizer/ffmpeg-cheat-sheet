@@ -1,4 +1,4 @@
-# ffmpeg_cheat_sheet
+# ffmpeg cheat sheet
 frequently used command
 
 ***
