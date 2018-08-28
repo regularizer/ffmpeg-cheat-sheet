@@ -11,7 +11,7 @@ ffmpeg tools: **ffmpeg**, **ffplay**, **ffprobe**
 ### windows: 
 cmd -> ffmpeg\bin\ffmpeg.exe
 
-### video converter:
+### video converter
 `ffmpeg -i path\input.mov -acodec copy -vcodec copy path\output.mp4`
 
 ### key frame extraction from video
