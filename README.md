@@ -19,3 +19,12 @@ cmd -> ffmpeg\bin\ffmpeg.exe
 
 ### convert framerate without changing the video length
 `ffmpeg -i path\input.mov -r 30 -c:v libx264 -y path\output.mov`
+
+### rotating video
+`ffmpeg -i path\input.mov -vf "transpose=1" path\output.mov`  
+transpose parameter use  
+0 = 90CounterCLockwise and Vertical Flip (default)  
+1 = 90Clockwise  
+2 = 90CounterClockwise  
+3 = 90Clockwise and Vertical Flip  
+-vf "transpose=2,transpose=2" for 180 degrees  
