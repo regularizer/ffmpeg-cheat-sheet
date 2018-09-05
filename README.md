@@ -33,7 +33,7 @@ transpose parameter use
 `ffmpeg -i video.mp4`  
 
 ### removing audio from a media file
-`ffmpeg -i path\input.mp4 -an papth\output.mp4`  
+`ffmpeg -i path\input.mp4 -an path\output.mp4`  
 
 ### removing video from a media file
 `ffmpeg -i path\input.mp4 -vn path\output.mp3`  
