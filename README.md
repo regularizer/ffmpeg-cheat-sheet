@@ -37,3 +37,12 @@ transpose parameter use
 
 ### removing video from a media file
 `ffmpeg -i path\input.mp4 -vn path\output.mp3`  
+
+### joining multiple files (same type) 
+`ffmpeg -f concat -safe 0 -i path\mylist.txt -c copy output_file.format`  
+`-safe 0` above is not required if the paths are relative  
+mylist.txt will be like below  
+
+file '/path/to/file1.format'  
+file '/path/to/file2.format'  
+file '/path/to/file3.format'    
