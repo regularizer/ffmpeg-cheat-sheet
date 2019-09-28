@@ -18,9 +18,9 @@ cmd -> ffmpeg\bin\ffmpeg.exe
 `ffmpeg -i path\input.mov -vf select='eq(pict_type\, I)' -vsync 2 -f image2 path\keyframe_%03d.jpg`
 
 ### video split
-`ffmpeg -ss 00:00:00 -t 00:30:00 -i input.avi -vcodec copy -acodec copy output1.avi`\
-`ffmpeg -ss 00:30:00 -t 00:30:00 -i input.avi -vcodec copy -acodec copy output2.avi`\
-`ffmpeg -ss 01:00:00 -t 00:30:00 -i input.avi -vcodec copy -acodec copy output3.avi`
+`ffmpeg -ss 00:00:00 -t 00:00:30 -i input.avi -vcodec copy -acodec copy output1.avi`\
+`ffmpeg -ss 00:30:00 -t 00:00:30 -i input.avi -vcodec copy -acodec copy output2.avi`\
+`ffmpeg -ss 01:00:00 -t 00:00:30 -i input.avi -vcodec copy -acodec copy output3.avi`
 
 -ss stands for start time\
 -t is the length of final clip\
