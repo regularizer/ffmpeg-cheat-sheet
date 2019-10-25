@@ -30,6 +30,9 @@ cmd -> ffmpeg\bin\ffmpeg.exe
 ### change the framerate without changing the video length
 `ffmpeg -i path\input.mov -r 30 -c:v libx264 -y path\output.mov`
 
+### change the framesize without changing the video length
+`ffmpeg -i path\input.mov -vf scale=640:360 acodec copy path\output.mov`
+
 ### rotating a video
 `ffmpeg -i path\input.mov -vf "transpose=1" -r 30 -sameq -acodec copy path\output.mov`  
 transpose parameter use  
