@@ -58,4 +58,6 @@ mylist.txt will be like below
 
 file '/path/to/file1.format'  
 file '/path/to/file2.format'  
-file '/path/to/file3.format'    
+file '/path/to/file3.format'   
+
+ffmpeg -i concat:"input1.mp4|input2.mp4" output.mp4  
