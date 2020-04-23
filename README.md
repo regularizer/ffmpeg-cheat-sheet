@@ -61,3 +61,7 @@ file '/path/to/file2.format'
 file '/path/to/file3.format'   
 
 ffmpeg -i concat:"input1.mp4|input2.mp4" output.mp4  
+
+### video compression
+ffmpeg -i input.mp4 -vcodec libx265 -acodec aac -crf 23 output.mp4  
+ffmpeg -i input.mp4 -vcodec h264 -acodec aac output.mp4  
