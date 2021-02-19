@@ -33,6 +33,7 @@ cmd -> ffmpeg\bin\ffmpeg.exe
 ### change the framesize without changing the video length
 `ffmpeg -i path\input.mov -vf scale=640:360 -acodec copy path\output.mov`
 
+
 ### rotating a video
 `ffmpeg -i path\input.mov -vf "transpose=1" -r 30 -sameq -acodec copy path\output.mov`  
 transpose parameter use  
@@ -65,3 +66,6 @@ ffmpeg -i concat:"input1.mp4|input2.mp4" output.mp4
 ### video compression
 ffmpeg -i input.mp4 -vcodec libx265 -acodec aac -crf 23 output.mp4  
 ffmpeg -i input.mp4 -vcodec h264 -acodec aac output.mp4  
+
+
+### [more](https://gist.github.com/loretoparisi/a9277b2eb4425809066c380fed395ab3)
